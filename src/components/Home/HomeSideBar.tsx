@@ -111,8 +111,8 @@ export const HomeSideBar: React.FC<{ animeData: Anime[] }> = ({
           to={`/watch/${anime.id}`}
           key={anime.id}
           style={{ textDecoration: 'none', color: 'inherit' }}
-          title={`${anime.title.userPreferred}`}
-          aria-label={`Watch ${anime.title.userPreferred}`}
+          title={`${anime.title.romaji}`}
+          aria-label={`Watch ${anime.title.romaji}`}
         >
           <AnimeCard
             key={anime.id}
@@ -120,7 +120,7 @@ export const HomeSideBar: React.FC<{ animeData: Anime[] }> = ({
           >
             <AnimeImageStyled
               src={anime.image}
-              alt={anime.title.userPreferred}
+              alt={anime.title.romaji}
             />
             <InfoStyled>
               <TitleWithDot>
