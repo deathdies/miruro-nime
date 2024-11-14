@@ -98,7 +98,7 @@ const ErrorMessage = styled.div`
 
 const Home = () => {
   const [itemsCount, setItemsCount] = useState(
-    window.innerWidth > 500 ? 24 : 15,
+    window.innerWidth > 500 ? 15 : 9,
   );
 
   // Reduced active time to 5mins
@@ -135,7 +135,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setItemsCount(window.innerWidth > 500 ? 24 : 15);
+      setItemsCount(window.innerWidth > 500 ? 15 : 9);
     };
 
     window.addEventListener('resize', handleResize);
