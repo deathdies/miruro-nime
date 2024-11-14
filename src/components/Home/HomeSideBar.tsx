@@ -125,7 +125,7 @@ export const HomeSideBar: React.FC<{ animeData: Anime[] }> = ({
             <InfoStyled>
               <TitleWithDot>
                 <StatusIndicator status={anime.status} />
-                <Title>{anime.title.english || anime.title.romaji}</Title>
+                <Title>{anime.title.romaji}</Title>
               </TitleWithDot>
               <Details>
                 {anime.type && <>{anime.type}</>}
